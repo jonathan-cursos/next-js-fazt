@@ -1,0 +1,32 @@
+Curso de Next.js por Fazt
+
+Next.js:
+  -Framework de React que nos permite hacer SSR de una manera sencilla.
+  -Next.js será tambien el encargado de transpilar el código, y empaquetarlo.
+
+-Debemos instalar: next react react-dom.
+
+-Habrán 3 scripts principales:
+    dev: next -> Correr un ambiente de desarrollo.
+    build: next build -> Hacer los builds.
+    start: next start -> Correr el servidor.
+
+-Debemos tener una carpeta pages donde tendremos cada página, dentro cada componente:
+  1.No es necesario importar react, ya que cuando creamos una función que retorne JSX y la exportamos, next la reconocerá como React automaticamente.
+  2.Nos crea un enrutador automaticamente. Para acceder a una ruta, el nombre de esa ruta es el nombre del archivo sin extension (por eso lo hicimos en minuscula).
+  3.Tampoco se necesita el html, todo se hará en automatico, iniciando por la page index.
+
+Enrutador:
+  -Next tiene varios componentes propios con diferentes funciones.
+  -Para importarlos lo hacemos con cualquier nombre, pero desde 'next/[component_name]'.
+  -En nuestro caso usaremos uno llamado 'link'.
+  -Al usarlo tiene que cumplir 2 reglas:
+    .Tener una prop href con la ruta.
+    .Encapsular una etiqueta de ancla, esta no tiene href.
+
+Componente Head de Next.js:
+  -Algunas veces vamos a necesitar ingresar metas, css, js o un titulo como lo haciamos con la etiqueta head en el HTML.
+  -Como ya no tenemos HTML, aquí nos ayuda el componente 'head' de Next.js.
+  -Dentro del componente que necesitamos que lo tenga, colocamos <Head></Head> y dentro las etiquetas que podría tener en HTML.
+
+  [Quedamos minuto 23:50]
