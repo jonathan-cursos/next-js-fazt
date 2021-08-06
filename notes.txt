@@ -29,4 +29,36 @@ Componente Head de Next.js:
   -Como ya no tenemos HTML, aquí nos ayuda el componente 'head' de Next.js.
   -Dentro del componente que necesitamos que lo tenga, colocamos <Head></Head> y dentro las etiquetas que podría tener en HTML.
 
-  [Quedamos minuto 23:50]
+Evento getInitialProps:
+  -En los componentes de React tenemos eventos.
+  -El Next tambien podemos ejecutar algunos eventos.
+  -Por ejemplo este nos ayuda a dar valor a las props iniciales que tendrá el 
+    componente antes de ser pintado.
+  -Lo haremos para obtener datos.
+  -Para usarlo, fuera del componente, usamos el elemento getInitialProps del 
+    componente, y damos como valor una funcion (tiene un elemento context como 
+    param, no lo usamos).
+  -Dentro haremos todo el proceso para definir los valores de las props.
+  -Se puede hacer fetch.
+  -Para colocar las props, retornamos un objeto, y cada elemento serán las props
+    que tendrá ese componente.
+  -Un console.log hecho aquí se verá en la consola, pero no la del navegador.
+
+Rutas con parametros:
+  -Para colocar las rutas con parametros, la pagina la haremos en una carpeta.
+  -El parametro que vendría despues lo haremos creando un archivo con el nombre 
+    [param].js (contando los []).
+  -Por ejemplo, sí queremos users/:id, el archivo creando dentro de la carpeta
+    'users' debe ser [id].js.
+
+Obtener el parametro de una ruta en un componente.
+  -Importamos useRouter de next/router.
+  -Asignamos ese hook a una variable.
+  -Esa variable ahora es un objeto, y contiene los parametros de esa ruta.
+
+Fetch:
+  -Hay varias formas de hacer fetch.
+  -Se recomienda realizar un tipo de fetch distinto sí estamos en frontend o en
+    backend.
+  -Por eso estamos usando la librería 'isomorphic-fetch', la cual, al importarla,
+    se usa exactamente igual que fetch.
